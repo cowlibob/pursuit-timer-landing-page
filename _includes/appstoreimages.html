@@ -6,7 +6,7 @@
 
 $(function() {
 
-    var apiURL = "https://itunes.apple.com/lookup?id={{ site.ios_app_id }}&callback=?";
+    var apiURL = "https://itunes.apple.com/lookup?id={{ site.ios_app_id }}&country={{ site.ios_app_country }}&callback=?";
 
     $.getJSON(apiURL, function(json) {
 
@@ -58,6 +58,12 @@ $(function() {
             var $appStoreLink = $(".appStoreLink");
             if ($.trim($appStoreLink.attr('href')).length == 0) {
                 $($appStoreLink).attr("href", appInfo.trackViewUrl);
+            }
+
+            // Set App Store link using the iOS app ID if it is not set manually in _config.yml
+            var $appStoreLink = $(".appDescription");
+            if ($.trim($appStoreLink.attr('href')).length == 0) {
+                $($appStoreLink).html(appInfo.description.replace(/\n/g, "<br/>"));
             }
 
             console.info(appInfo);

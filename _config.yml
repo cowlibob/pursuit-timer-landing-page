@@ -2,31 +2,32 @@
 page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
-ios_app_id                                : 1234793120                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+ios_app_id                                : 1527888338                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+ios_app_country                           : gb                                        # Optional, Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
 playstore_link                            :                                           # Enter Google Play Store URL.
-presskit_download_link                    : https://emilbaehr.com                                          # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
+presskit_download_link                    : #https://emilbaehr.com                                          # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 
 app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Write a short tagline for your app.
+app_description                           : Dinghy sailing pursuit race timer.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
 
 
 # Information About Yourself
-your_name                                 : Emil Baehr                                
-your_link                                 : https://emilbaehr.com                     
-your_city                                 : Copenhagen                                
-email_address                             : emil.baehr@gmail.com
+your_name                                 : James Cowlishaw
+your_link                                 : https://www.correctedtime.com                     
+your_city                                 : Sheffield, UK 
+email_address                             : james@correctedtime.com
 facebook_username                         :                                           
-instagram_username                        : ebaehr
-twitter_username                          : ebaehr
-github_username                           : emilbaehr
+instagram_username                        : correctedtime
+twitter_username                          : correctedtime 
+github_username                           : cowlibob
 youtube_username                          :
 
 
@@ -34,51 +35,46 @@ youtube_username                          :
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : GitHub Pages Jekyll Theme
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
-    fontawesome_icon_name                 : magic
+  - title                                 : Flexible class starts
+    description                           : Choose exactly which fleets should start, slowest automatically starts first.
+    fontawesome_icon_name                 : tasks
     
-  - title                                 : iPhone Device Preview
-    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
+  - title                                 : Timed start prompts
+    description                           : Audible and visual prompts for each start.
+    fontawesome_icon_name                 : bullhorn
+
+  - title                                 : Portable & dependable.
+    description                           : iOS 14 compatible. Built in Swift & Swift UI, it runs on iPhone or iPad, MacOS coming soon.
     fontawesome_icon_name                 : mobile
 
-  - title                                 : Video Support
-    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
-    fontawesome_icon_name                 : play-circle
+  - title                                 : Local notifications
+    description                           : Don't miss a start, even when the app is closed, or the screen is locked.
+    fontawesome_icon_name                 : exclamation
 
-  - title                                 : Automatic Icon and Metadata
-    description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
-    fontawesome_icon_name                 : sync
+  - title                                 : Custom race duration
+    description                           : Set an overall race length from 10 minutes to 23 hours, 50 minutes!
+    fontawesome_icon_name                 : stopwatch
 
-  - title                                 : Easy to Tweak
-    description                           : Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : adjust
-  
-  - title                                 : Feature List
-    description                           : Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : star
+  - title                                 : Times at your fingertips
+    description                           : Relative start times are calculated and displayed on the fly. Know exactly how long until the next start.
+    fontawesome_icon_name                 : eye
 
-  - title                                 : Smart App Banner
-    description                           : Display a smart app banner on iOS devices.
-    fontawesome_icon_name                 : arrow-alt-circle-down
+# For race management; set it going and toot the horn when the app pings!
 
-  - title                                 : Social Links
-    description                           : Easily add social media accounts and contact info in the footer via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : link
+# Dinghy pursuit races are run in reverse, each class starts according to PYS handicap.
 
-  - title                                 : FontAwesome Support
-    description                           : Pick custom Font Awesome icons for the feature list via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : info-circle
+# Aim: overtake the boat furthest ahead to win. This is simple for racers, complex for duty teams.
 
-  - title                                 : # New Feature Title
-    description                           : # New Feature Description
-    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
+# Pursuit Timer simplifies the pursuit start.
+# Just select the classes and duration.
+# Start the timer and follow the prompts.
+# Multi-start pursuit race timer for sailing dinghies.
 
 
 
 # Theme Settings
 topbar_color                              : "#000000"
-topbar_transparency                       : 0.1
+topbar_transparency                       : 0.6
 topbar_title_color                        : "#ffffff"
 
 cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
@@ -89,7 +85,7 @@ device_color                              : black                               
 
 body_background_color                     : "#ffffff"
 
-link_color                                : "#1d63ea"
+link_color                                : "#CB66A3"
 
 app_title_color                           : "#ffffff"
 app_price_color                           : "#ffffff"
@@ -98,13 +94,14 @@ app_description_color                     : "#ffffff"
 feature_title_color                       : "#000000"
 feature_text_color                        : "#666666"
 
-feature_icons_foreground_color            : "#1d63ea"
+feature_icons_foreground_color            : "#CB66A3"
 feature_icons_background_color            : "#e6e6e6"
 
 social_icons_foreground_color             : "#666666"
 social_icons_background_color             : "#e6e6e6"
 
 footer_text_color                         : "#666666"
+
 
 
 
@@ -131,6 +128,11 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - bin
+
 
 collections:
   pages:
